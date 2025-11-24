@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>凱西玩AI-免費直播講座</title>
+    <!-- 載入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 使用 Inter 字體 (Tailwind 預設) */
+        body {
+            font-family: "Inter", "PingFang TC", "Microsoft JhengHei", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="container mx-auto min-h-screen flex items-center justify-center p-4">
+        <div class="w-full max-w-5xl bg-white shadow-2xl rounded-2xl overflow-hidden md:flex">
+
+            <!-- 左側：活動資訊 (深色背景) -->
+            <div class="w-full md:w-1/2 bg-slate-700 text-white p-8 md:p-12 flex flex-col justify-center">
+
+                <span class="inline-block bg-indigo-500 text-white text-xs font-semibold px-3 py-1 rounded-full mb-4 w-fit">
+                    凱西玩AI-免費直播講座
+                </span>
+
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+                    NotebookLM <BR> 全攻略
+                </h1>
+
+                <p class="text-lg text-slate-200 mb-6">
+                    你知道 NotebookLM 是什麼嗎？它不只是筆記工具，更是 AI 學習神器！
+                </p>
+                <p class="text-lg text-slate-200 mb-6">
+                    想知道怎麼用它提升學習效率、整理資料、準備報告、製作簡報、提升職場效率？這場直播你不能錯過！
+                </p>
+
+                <ul class="space-y-3 text-slate-100 mb-8">
+                    <li class="flex items-start">
+                        <span class="text-indigo-400 font-bold text-lg mr-3">1.</span>
+                        <span>新手小白極速上手：解鎖AI筆記新時代</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-indigo-400 font-bold text-lg mr-3">2.</span>
+                        <span>AI高效內容生成術：讓NotebookLM變你的知識管家</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-indigo-400 font-bold text-lg mr-3">3.</span>
+                        <span>進階應用解密：打造全方位個人知識工作流程</span>
+                    </li>
+                </ul>
+
+                <!-- 時間與日期 -->
+                <div class="space-y-4 mb-8">
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 text-indigo-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        <span class="text-lg">2025 / 11 / 28 (五)</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 text-indigo-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span class="text-lg">20:00 ~ 22:00 (台灣時間)</span>
+                    </div>
+                    <div class="flex items-center">
+                         <svg class="w-6 h-6 text-indigo-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l-3 3m0 0l-3-3m3 3v6m0-13a2 2 0 100-4 2 2 0 000 4zm-2 7a2 2 0 100 4 2 2 0 000-4zm4 0a2 2 0 100 4 2 2 0 000-4z"></path></svg>
+                        <span class="text-lg">線上私密直播 (報名後寄送連結)</span>
+                    </div>
+                </div>
+
+                <!-- 主講人 -->
+                <div class="flex items-center">
+                    <div class="w-16 h-16 rounded-full bg-slate-500 flex items-center justify-center mr-4">
+                        <!-- 講師頭像 SVG Placeholder -->
+                        <svg class="w-10 h-10 text-slate-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                    </div>
+                    <div>
+                        <span class="text-sm text-slate-300">主講人</span>
+                        <p class="text-xl font-semibold">凱西</p>
+                        <p class="text-sm text-slate-300">凱西玩AI / EP2</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 右側：報名表單 -->
+            <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">
+                    立即免費報名
+                </h2>
+
+                <form id="signup-form">
+                    <div class="mb-4">
+                        <label for="share-code" class="block text-sm font-medium text-gray-700 mb-1">
+                            共學代號 (必填)
+                        </label>
+                        <input type="text" id="share-code" name="share-code" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                               placeholder="請輸入您的KC創作者學堂共享代號">
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+                            Email (必填，將用於接收直播連結)
+                        </label>
+                        <input type="email" id="email" name="email" required
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                               placeholder="yourname@example.com">
+                    </div>
+
+                    <!-- 狀態訊息 -->
+                    <div id="loading-spinner" class="hidden text-center mb-4">
+                        <svg class="animate-spin h-5 w-5 text-indigo-600 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        <span class="text-sm text-gray-600">傳送中...</span>
+                    </div>
+                    <div id="success-message" class="hidden p-4 mb-4 text-green-700 bg-green-100 border border-green-300 rounded-lg">
+                        <strong>報名成功！</strong>現在不會寄信，直播連結將於活動前一天寄送給您，請於11/27再檢查您的 Email 信箱，謝謝。
+                    </div>
+                    <div id="error-message" class="hidden p-4 mb-4 text-red-700 bg-red-100 border border-red-300 rounded-lg">
+                        <strong>報名失敗。</strong>請稍後再試一次，或聯繫客服。【凱西的官方客服】https://lin.ee/NOhhBpt
+                    </div>
+
+                    <!-- 提交按鈕 -->
+                    <button type="submit" id="submit-button"
+                            class="w-full bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg
+                                   hover:bg-indigo-700 transition-colors duration-300
+                                   focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                        立即鎖定免費名額
+                    </button>
+
+                    <p class="text-xs text-gray-500 mt-4 text-center">
+                        您的資料將被嚴格保密，僅用於本次活動通知。
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // ！！！請將此處替換為您部署的 Google Apps Script 網頁應用程式網址！！！
+        const GAS_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycby_pQJ0Cp1XY1R5pvLESUrUXXFJtgFYjIR8zeYBna4mnyOJP8aajB92Bt1JLaEwkpXl/exec';
+
+        const form = document.getElementById('signup-form');
+        const submitButton = document.getElementById('submit-button');
+        const loadingSpinner = document.getElementById('loading-spinner');
+        const successMessage = document.getElementById('success-message');
+        const errorMessage = document.getElementById('error-message');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // 顯示載入中，隱藏按鈕與訊息
+            submitButton.classList.add('hidden');
+            loadingSpinner.classList.remove('hidden');
+            successMessage.classList.add('hidden');
+            errorMessage.classList.add('hidden');
+
+            const formData = new FormData(form);
+            const data = {
+                shareCode: formData.get('share-code'),
+                email: formData.get('email')
+            };
+
+            try {
+                // 將資料 POST 到 Google Apps Script
+                const response = await fetch(GAS_WEB_APP_URL, {
+                    method: 'POST',
+                    body: JSON.stringify(data),
+                    headers: {
+                        // <strong>**[ 錯誤修復 ]**</strong>
+                        // 將 'Content-Type': 'application/json' 更改為 'text/plain'
+                        // 'application/json' 會觸發瀏覽器 CORS preflight (OPTIONS) 請求，
+                        // 而 Google Apps Script 不會回應 OPTIONS 請求，導致 'Failed to fetch' 錯誤。
+                        // 'text/plain' 會將其視為「簡單請求」，Bypassing preflight。
+                        // G.A.S. 後端(doPost) 仍然可以正確解析(parse) text/plain 主體中的 JSON 字串。
+                        'Content-Type': 'text/plain;charset=utf-8',
+                    },
+                    // 注意：GAS Web App 的 POST 請求可能因 CORS 或重導向而變得複雜
+                    // 為了簡化，我們假設部署時已正確設定並返回 JSON
+                });
+
+                if (!response.ok) {
+                    // 如果伺服器響應不是 2xx，也視為錯誤
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const result = await response.json();
+
+                if (result.status === 'success') {
+                    // 報名成功
+                    successMessage.classList.remove('hidden');
+                    form.reset(); // 清空表單
+                } else {
+                    // 報名失敗 (GAS 返回的錯誤)
+                    throw new Error(result.message || 'Apps Script returned an error.');
+                }
+
+            } catch (error) {
+                // 網路錯誤或 fetch 失敗
+                console.error('Fetch Error:', error);
+                errorMessage.classList.remove('hidden');
+            } finally {
+                // 無論成功或失敗，隱藏載入中，顯示回提交按鈕
+                loadingSpinner.classList.add('hidden');
+                submitButton.classList.remove('hidden');
+            }
+        });
+    </script>
+
+</body>
+</html>
